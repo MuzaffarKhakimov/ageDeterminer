@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Libre+Barcode+39+Text&family=Madimi+One&family=Rubik+Gemstones&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Libre+Barcode+39+Text&family=Madimi+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Gemstones&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url(./bg/clear-sky.jpg);
+}
+/* @media only screen and (max-width: 450px){
+    .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-image: url(./bg/query-bg.jpg);
+    }
+    .head{
+        width: 200px;
+    }
+    .title{
+        width: 200px;
+        font-size: 16px;
+    }
+    form{
+        width: 250px;
+        justify-content: center;
+    }
+    .select{
+        font-size: 10px;
+    }
+    #span1{
+        width: 400px;
+        flex-direction: column;
+    }
+    .inp1{
+        width: 200px;
+    }
+    .inp2{
+        width: 200px;
+    }
+} */
+.container{
+    width: 1000px;
+    margin: 15px auto;
+    text-align: center;
+}
+.head{
+    width: 600px;
+    padding: 10px;
+    justify-content: center;
+    border: 4px inset red;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px 40px;
+    background: rgb(8,85,238);
+background: linear-gradient(90deg, rgb(8, 238, 123) 3%, rgba(9,9,121,0) 20% 80%, rgba(8,238,123) 100%);
+}
+.title{
+    font-family: "Rubik Gemstones", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+#icon{
+    font-size: 24px;
+    margin-top: 3px;
+}
+form{
+    border: 2px solid blue;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    margin: 20px auto;
+    width: 600px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 23px 1px inset rgba(10,18,230,0.82);
+}
+.select{
+    width: 260px;
+    background: aquamarine;
+    color: navy;
+    border-radius: 2% 6px;
+    font-size: 15px;
+    padding: 6px;
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 480;
+    text-align: center;
+}
+option{
+    font-family: "Rubik Bubbles", system-ui;
+    font-weight: 430;
+}
+input{
+    margin: 30px;
+    padding: 6px;
+    border: 2px solid burlywood;
+    border-radius: 5px 15px;
+    font-family: "Fredericka the Great", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  width: 240px;
+  background: rgb(172, 229, 210);
+}
+
+.progcess{
+    border-radius: 14px;
+    border: 2px solid aqua;
+    background: gainsboro;
+    padding: 5px;
+    width: 100px;
+    font-size: 15px;
+    font-family: "Finger Paint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.progcess:hover{
+    background: gray;
+    border: 2px solid rgb(0, 145, 255);
+    transition: all 0.4s ease-in-out;
+}
+#masha{
+    margin: 10px auto;
+    border: 3px solid navy;
+    border-radius: 10px;
+    display: none;
+}
+.res{
+    width: 550px;
+    height: 40px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    background: wheat;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2px;
+    justify-content: center;
+    box-shadow: 0px 0px 26px 1px rgba(10,18,230,0.82);
+}
+h2{
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.btn-wrap{
+    width: 350px;
+    margin: 15px auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.newbtn1{
+    width: 150px;
+    height: 30px;
+    padding: 4px;
+    background: blue;
+    color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+}
+.newbtn1:hover{
+    background: brown;
+    transition: all 0.6s ease-in-out;
+}
+.newbtn2{
+    width: 150px;
+    height: 30px;
+    padding: 4px;
+    border: 3px solid black;
+    background: blue;
+    color: white;
+    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+}
+.newbtn2:hover{
+    background: aquamarine;
+    color: blue;
+    transition: all 0.6s ease-in-out;
+}
+#span1{
+    display: flex;
+}
+#newspan{
+    display: none;
+}
+#arrow{
+    background: wheat;
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid aqua;
+}
+#arrow:hover{
+    background: gray;
+    transition: all 0.5s ease-in-out;
+}
